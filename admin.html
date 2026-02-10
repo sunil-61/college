@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Admin Dashboard</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: url('admin.jpg') no-repeat center center/cover;
+}
+
+.overlay{
+    background: rgba(0,0,0,0.75);
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+h1{
+    color:white;
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+.btn-container{
+    display:grid;
+    grid-template-columns: repeat(3, 220px);
+    gap:20px;
+}
+
+.btn{
+    padding:15px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#2c3e50;
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#34495e;
+    transform:scale(1.05);
+}
+
+.logout{
+    background:darkred;
+}
+.logout:hover{
+    background:red;
+}
+</style>
+
+<script>
+function go(page){
+    window.location.href = page;
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>Admin Control Panel</h1>
+
+<div class="btn-container">
+
+    <button class="btn" onclick="go('view.php')">View Users</button>
+
+    <button class="btn" onclick="go('update.php')">Update User</button>
+
+    <button class="btn" onclick="go('delete.php')">Delete User</button>
+
+    <button class="btn" onclick="go('search.php')">Search Account</button>
+
+    <button class="btn" onclick="go('admincomplaint.php')">View Complaints</button>
+
+    <button class="btn" onclick="go('adminfeedback.php')">View Feedback</button>
+
+    <button class="btn" onclick="go('admin_bus.php')">Manage Bus</button>
+
+    <button class="btn" onclick="go('admin_bookbank.php')">Book Bank Students</button>
+
+    <button class="btn" onclick="go('admin_marksheet.php')">View Marksheets</button>
+
+    <button class="btn" onclick="go('admin_fees.php')">Student Fees</button>
+
+    <button class="btn" onclick="go('admin_dashboard.php')">Analytics Dashboard</button>
+
+
+    <button class="btn logout" onclick="go('login.html')">Logout</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Web</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function gotologin(){
+            window.location.href="login.html";
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <marquee><h1 style="font-size: 700%;">Create Page</h1></marquee>
+    </center>
+
+    <form action="save.php" method="POST" enctype="multipart/form-data" align="center">
+        <table align="center">
+            <tr><td>User ID</td><td><input type="text" name="userid" required placeholder="Enter a unique user id!" class="box"></td></tr>
+
+            <tr><td>Name</td><td><input type="text" name="uname" required placeholder="Enter your name!" class="box"></td></tr>
+
+            <tr><td>Password</td><td><input type="password" name="pass" required placeholder="Enter a password!" class="box"></td></tr>
+
+            <tr><td>Mobile Number</td><td><input type="text" name="mobile" placeholder="Enter mobile number" class="box"></td></tr>
+
+            <tr><td>E-mail</td><td><input type="email" name="email" placeholder="Enter a E-mail id" class="box"></td></tr>
+
+            <tr><td>Profile Photo</td><td><input type="file" name="photo"></td></tr>
+            
+            <tr>
+                <td><input type="submit" name="save" value="Save" class="btn" onclick="return confirm('Are you sure you want to save this information?')"></td>
+                <td><button type="button" onclick="gotologin()" class="btn">Login page</button></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.box {
+    font-size: 25px;
+    opacity: 50%;
+}
+.heading {
+    font-size: 54px; 
+    background-color: bisque; 
+    margin: 0%; 
+    padding: 15px; 
+    border-radius:55% ;
+}
+.len {
+    width: 45%;
+}

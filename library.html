@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Management</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function gotocreate(){
+                window.location.href="create.html";
+            }
+            function gotoindex(){
+                window.location.href="index.html";
+            }
+        </script>
+        <style>
+            #btn {
+                padding: 12px 30px;
+                font-size: 18px;
+                background-color: rgb(41, 170, 200);
+                border: none;
+                border-radius: 28px;
+                color: rgb(57, 2, 160);
+                cursor: pointer;
+                margin: 5px;
+            }
+            #btnr {
+                padding: 12px 57px;
+                font-size: 18px;
+                background-color: rgb(41, 170, 200);
+                border: none;
+                border-radius: 28px;
+                color: rgb(57, 2, 160);
+                cursor: pointer;
+                margin: 5px;
+            }
+            #btnc {
+                padding: 12px 15px;
+                font-size: 18px;
+                background-color: rgb(41, 170, 200);
+                border: none;
+                border-radius: 28px;
+                color: rgb(57, 2, 160);
+                cursor: pointer;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body style="margin: 0; background-image: url('library.webp'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed;">
+        <center>
+            <p style="font-size: 700%;">Library Management</p>
+        <form action="library.php" method="POST">
+            <div>
+                <label style="margin-bottom: 50px; font-size: 24px;">Admin ID</label><br>
+                <input type="text" name="userid" required placeholder="Enter an Admin id!" autofocus class="box" style="margin-bottom: 6px;"><br>
+                <label style="margin-bottom: 6px; font-size: 24px;">Password</label><br>
+                <input type="password" name="pass" required placeholder="Enter a password!" autofocus class="box" style="margin-bottom: 6px;"><br>
+            
+                <input type="submit" name="submit" value="Login" id="btn" style="display: block; margin: 0 auto; margin-top: 15px; width: 8.5cm;">
+            </div>
+        </form>
+        </center>
+        <div>
+                <button type="button" onclick="gotoindex()">Back</button>
+        </div>
+    </body>
+</html>

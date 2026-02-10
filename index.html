@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Suyash College Rashmi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #div1 {
+            width: 99.7%;
+            height: 73px;
+            border: 1px solid black;
+            border-left-width: 2px;
+            border-right-width: 2px;
+            line-height: 9px;
+            font-size: 25px;
+            background-color: #4f8f8b;
+            position: relative;
+            animation: first 3s infinite;
+            color: white;
+        }
+
+        @keyframes first {
+            0%   { background-color: #4f8f8b; }
+            50%  { background-color: #5fa8a4; }
+            100% { background-color: #4f8f8b; }
+        }
+
+        #div1 h1 {
+            text-align: center;
+            animation: headingText 3s ease-in-out infinite;
+        }
+
+        @keyframes headingText {
+            0%   { transform: scale(0.65); }
+            50%  { transform: scale(0.9); }
+            100% { transform: scale(0.65); }
+        }
+
+        #logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        #logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #div2 {
+            width: 99.7%;
+            height: 45px;
+            border: 1px solid bl ack;
+            border-left-width: 2px;
+            border-right-width: 2px;
+            border-top-width: 0px;
+            font-size: 22px;
+            line-height: 38px;
+            background-color: #3b6f6f;
+        }
+
+        #div2 a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #div2 a:hover {
+            text-decoration: underline;
+        }
+
+        #tabletd1 { padding-left: 610px; }
+        #tabletd2 { padding-left: 15px; }
+        #tabletd3 { padding-left: 15px; }
+        #tabletd4 { padding-left: 15px; }
+        #tabletd5 { padding-left: 15px;}
+        #tabletd6 { padding-left: 15px; }
+        #tabletd7 { padding-left: 15px; }
+        #tabletd8 { padding-left: 15px; }
+        #tabletd9 { padding-left: 15px; }
+        #tabletd10 { padding-left: 15px;}
+
+        #div3 {
+            width: 25%;
+            height: 470px;
+            border: 1px solid black;
+            border-top-width: 0px;
+            border-left-width: 2px;
+            float: left;
+            animation: second 4s infinite;
+        }
+
+        @keyframes second {
+            0%   { background-color: #dbe4ee; }
+            50%  { background-color: #cfd9e6; }
+            100% { background-color: #dbe4ee; }
+        }
+
+        #marquee1 {
+            font-size: 60px;
+            color: #7a2d2d;
+            margin-top: 0;
+        }
+
+        #div4 {
+            width: 74.6%;
+            height: 470px;
+            border: 1px solid black;
+            border-top-width: 0px;
+            border-right-width: 2px;
+            text-align: center;
+            float: left;
+            border-left-width: 0px;
+            line-height: normal;
+            font-size: 50px;
+            background-color: #f4f6f8;
+        }
+
+        #message {
+            width: 55%;
+            float: left;
+            text-align: left;
+            padding: 40px;
+            line-height: 30px;
+            font-size: 18px;
+            color: #333;
+            font-family: "Mangal", "Noto Sans Devanagari", Arial, sans-serif;
+        }
+
+
+        #div5 {
+            width: 99.79%;
+            height: 32px;
+            border: 1px solid black;
+            border-right-width: 2px;
+            border-top-width: 0px;
+            line-height: 40px;
+            clear: both;
+            background-color: #2f5f5f;
+            color: white;
+        }
+
+        #imgg img {
+            width: 30%;
+            height: auto;
+            float: right;
+            margin-top: 4%;
+            margin-right: 4%;
+            border-top-right-radius: 35px;
+            border-bottom-left-radius: 35px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="logo">
+            <img src="logo.png">
+        </div>
+        <h1>Suyash College Rashmi</h1>
+    </div>
+
+    <div id="div2">
+        <table>
+            <tr>
+                <td id="tabletd1"><a href="index.html">Home</a></td>
+                <td id="tabletd3">Staff
+                    <select style="background-color: #3b6f6f;" onchange="location = this.value;">
+                        <option value="" disabled selected></option>
+                        <option value="teaching.php">Teaching Staff</option>
+                        <option value="nonteaching.php">Non Teaching</option>
+                    </select>
+                </td>
+                <td id="tabletd4"><a href="gallery.php">Gallery</a></td>
+                <td id="tabletd5"><a href="program.html">Programme</a></td>
+                <td id="tabletd8"><a href="library.html">Library</a></td>
+                <td id="tabletd9"><a href="contact.html">Contact</a></td>
+                <td id="tabletd10"><a href="login.html" onclick="return confirm('Are you sure you want to login?')">Login</a></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="div3">
+        <marquee scrollamount="8" behavior="alternate">
+            <p id="marquee1">News</p>
+        </marquee>
+
+        <ol>
+            <h3>Mohanlal Sukhadiya University</h3>
+            <li><a href="https://mlsuresults.sumsraj.com/">Result</a></li>
+            <li><a href="https://mlsu.ac.in/Syllabus">Syllabus</a></li>
+            <li><a href="https://mlsu.ac.in/Examination-Time-Table">Time Table</a></li>
+            <li><a href="https://mlsuexamination.sumsraj.com/Exam_ForSupple_AdmitCard.aspx">Admit Card</a></li>
+            <li><a href="https://mlsuexamination.sumsraj.com/default.aspx">Exam Form</a></li>
+        </ol>
+    </div>
+
+    <div id="div4">
+        <div id="message">
+            <h2>About Suyash Group of Colleges</h2>
+            <p>
+                सुयश महाविद्यालय की स्थापना वर्ष 2013 में आइडियाज़ कंबाइन सोसाइटी,
+                उदयपुर के तत्वाधान में की गई थी।
+                मात्र बारह वर्षों में सुयश महाविद्यालय एक आधुनिक,
+                उच्च अनुशासन वाली तथा बालिकाओं के लिए उत्कृष्ट संस्थान
+                के रूप में विकसित हुआ है।
+                135 विद्यार्थियों से प्रारंभ होकर आज महाविद्यालय में
+                लगभग 1340 विद्यार्थी अध्ययनरत हैं।
+                प्रबुद्ध शिक्षाविद प्रोफेसर जे. एस. पंवार के
+                कुशल मार्गदर्शन में विद्यार्थी उज्जवल भविष्य की ओर अग्रसर हैं।
+            </p>
+        </div>
+
+        <div id="imgg">
+            <img src="director.jpeg" alt="College Director">
+        </div>
+    </div>
+
+
+    <div id="div5">
+        <h3 align="center">Copyright Suyash College Rashmi 2025</h3>
+    </div>
+
+</body>
+</html>
